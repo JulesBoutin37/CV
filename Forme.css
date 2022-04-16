@@ -43,18 +43,6 @@ a
 {
     text-decoration: none;
 }
-
-.corps
-{
-    display: flex;
-    flex-direction: row;
-    min-height: 800px;
-    justify-content: center;
-    align-items: baseline;
-    width: 100%;
-    color: white;
-    margin-top: 15px;
-}
 /***** FIN BLOCK *****/
 
 /***** HEADER ****/
@@ -132,6 +120,17 @@ header #menu .colonne a
 
 /***** FORMATION *****/
 
+#conteneur_formation
+{
+    display: flex;
+    min-height: 670px;
+    justify-content: center;
+    align-items: baseline;
+    width: 99%;
+    color: white;
+    margin-top: 15px;
+}
+
 .formation
 {
     display: flex;
@@ -177,15 +176,11 @@ header #menu .colonne a
 }
 /***** FIN FORMATION *****/
 
-/***** PROJETS *****/
-/* Hauteur des photos : 252 px */
-.projet
+/***** PROJETS *****/ /*à refaire en flex*/
+/*.projet /* Taille des photos : 252 x 400 px 
 {
-    display: flex;
-    flex-direction: row;
-    width: 99%;
-    height: auto;
     min-height: 252px;
+    width: 99%;
     color: white;
     background-color: rgba(0, 0, 0, 0.438);
     border-radius: 20px;
@@ -193,38 +188,41 @@ header #menu .colonne a
     margin-top: 15px;
 }
 
+.projet .gauche
+{
+    float: left;
+    height: 100%;
+    min-height: 252px;
+}
+
+.projet .droit
+{
+    float: right;
+    height: 100%;
+    min-height: 252px;
+    background-color: aqua;
+}
+
 .projet article
 {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: max-content;
+    display: inline-block;
+    height: 252px;
+    width: fit-content;
     padding: 5px;
 }
 
-.projet .img_left
+.projet img
 {
-    display: flex;
     width: auto;
     height: 100%;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
-} 
-
-.projet .img_right
-{
-    display: flex;
-    width: auto;
-    height: 100%;
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
-} 
+    text-align: justify;
+} */
 
 /***** FIN PROJETS *****/
 
 /***** COMPETENCES *****/
-
-/* mindmap */
 
 /***** FIN COMPETENCES *****/
 
